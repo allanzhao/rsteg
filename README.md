@@ -9,12 +9,14 @@ A brief overview of the encoding and decoding process is given below. If you wan
 
 Command line arguments are parsed with the [argparse4j](https://github.com/tatsuhiro-t/argparse4j) library.
 
-Example command line usage
---------------------------
+Example usage
+-------------
 
-    $ java -jar RSteg.jar encode cover_image.png output_image.png -m "Hello world!"
+A compiled RSteg.jar can be found [here](https://github.com/allanzhao/rsteg/releases/download/v0.1-alpha/RSteg.jar). cover_image.png should be a moderately sized PNG image in the current working directory.
+
+    $ java -jar RSteg.jar encode cover_image.png output_image.png -m "Hello world"
     $ java -jar RSteg.jar decode output_image.png
-    Hello world!
+    Hello world
 
 Goals
 -----
