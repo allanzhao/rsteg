@@ -3,7 +3,7 @@ RSteg - Robust steganography tool
 
 Like other steganography programs, RSteg can hide a message in an image and reveal it again. The message can still be extracted if the carrier image is subjected to minor editing such as drawing. RSteg's primary feature, however, is the ability to resist dimensional changes such as image cropping and padding without losing the message.
 
-RSteg is only robust in the sense that it can decode carrier images that have been resized, unlike many other steganography programs. Bugs may (and probably will) be present, and no effort is made to hide the message from more than casual observation.
+RSteg is only robust in the sense that it can decode carrier images that have been resized (without scaling), unlike many other steganography programs. Bugs may (and probably will) be present, and no effort is made to hide the message from more than casual observation.
 
 A brief overview of the encoding and decoding process is given below. If you want to find out the details, take a look at [RStegCodec.java](https://github.com/allanzhao/rsteg/blob/master/rsteg/src/com/bitwiseops/rsteg/RStegCodec.java).
 
